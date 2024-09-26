@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class NewClass1 {
+
+  public static void main(String []args)
+  {
+    int i,j,k;
+    Scanner s=new Scanner(System.in);
+    k=s.nextInt();
+    for (i=0;i<k ;i++ )
+    {
+      for(j=0;j<k;j++)
+      {
+        if(i==0||j==0||i==k-1||j==k-1)
+        {
+          System.out.print("*");
+        }
+        else if((i==1||j==1)||(i==k-2||j==k-2)) 
+        {
+          System.out.print("#");
+        }
+        else
+        {
+          System.out.print("&");
+        }
+      }
+      System.out.println();
+    }
+  }
+}
